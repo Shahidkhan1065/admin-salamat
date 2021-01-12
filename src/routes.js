@@ -1,9 +1,11 @@
 import MainLayout from './layout/MainLayout';
 import Home from './pages/Home';
 import Dashboard from './pages/Dashboard';
+import Login from './pages/Login';
 
 export const publicRoutes = [
   { path: '/', exact: true, component: Home, layout: MainLayout },
+  { path: '/login', component: Login, layout: MainLayout },
 ];
 
 export const protectedRoutes = [
